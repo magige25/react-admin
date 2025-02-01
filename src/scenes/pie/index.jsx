@@ -1,26 +1,26 @@
 import React from "react";
 import { Box, Typography, useTheme } from "@mui/material";
 import { tokens } from "../../theme";
-import CustomLineChart from "../../components/LineChart";
+import CustomPieChart from "../../components/PieChart";
 
-const Line = () => {
+const Pie = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
 
   return (
     <Box m="20px">
       <Typography variant="h4" fontWeight="bold" color={colors.grey[100]} mb={2}>
-        Revenue & Profit Trends
+        Sales Distribution by Category
       </Typography>
       <Typography variant="subtitle2" color={colors.grey[300]} mb={4}>
-        Monthly revenue and profit overview
+        Breakdown of sales across different categories
       </Typography>
 
       <Box height="75vh" p="20px" bgcolor={colors.primary[400]} borderRadius="10px">
-        <CustomLineChart />
+        <CustomPieChart />
       </Box>
     </Box>
   );
 };
 
-export default Line;
+export default Pie;
