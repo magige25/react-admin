@@ -105,7 +105,7 @@ const Sidebar = () => {
                                 <Typography
                                     variant="h6"
                                     color={colors.grey[100]}
-                                    fontweight="bold"
+                                    fontWeight="bold"
                                     sx={{ m: "5px 0 0 0"}}
                                 >
                                     Magige David
